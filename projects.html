@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Lab03 - Projects Page</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <a class="navbar-brand font-weight-bold" href="index.html"
+        >Lab 03 - Software Studio</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#mainNav"
+        aria-controls="mainNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ml-auto align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="projects.html"
+              >Projects <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item mt-2 mt-lg-0">
+            <a
+              class="nav-link btn btn-sm btn-warning text-dark ml-lg-2 px-3"
+              href="index.html#contact"
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="section-pad">
+      <div class="container">
+        <h1 class="section-title">Projects</h1>
+        <p class="text-muted">
+          Responsive project grid: 4 columns (lg), 2 columns (md), 1 column
+          (sm). <br />
+          Uses Bootstrap grid system and card components for a responsive
+          layout. <br />
+          <b
+            >Note: You can choose any Bootstrap components, as long as its
+            reasonable</b
+          >
+        </p>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="card project-card h-100">
+              <img
+                src="image/photo_1.jpg"
+                class="card-img-top project-thumb"
+                alt="Project 1 placeholder"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Scene Randomization</h5>
+                <p class="card-text text-muted">
+                  We can randomize objects in the scene used for robotics
+                  learning.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="card project-card h-100">
+              <img
+                src="image/photo_2.jpg"
+                class="card-img-top project-thumb"
+                alt="Project 2 placeholder"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Automatic Segmentation</h5>
+                <p class="card-text text-muted">
+                  Automatically detect object types and positions and bounding
+                  box
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="card project-card h-100">
+              <img
+                src="image/photo_3.jpg"
+                class="card-img-top project-thumb"
+                alt="Project 3 placeholder"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Dual Arm Manipulation</h5>
+                <p class="card-text text-muted">
+                  2 arm robots working together
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="card project-card h-100">
+              <img
+                src="image/photo_4.gif"
+                class="card-img-top project-thumb"
+                alt="Project 4 placeholder"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Scene Generation</h5>
+                <p class="card-text text-muted">
+                  We can generate multiple interactable scenes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact" class="site-footer py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-7">
+            <h2 class="section-title text-white mt-0">Contact Me</h2>
+            <p class="text-light mb-4">
+              A simple Bootstrap form inside the footer. Click the button to
+              open a modal message.
+            </p>
+
+            <form>
+              <div class="form-group">
+                <label for="contactName" class="text-white">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="contactName"
+                  placeholder="Your name"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail" class="text-white">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="contactEmail"
+                  placeholder="name@example.com"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage" class="text-white">Message</label>
+                <textarea
+                  class="form-control"
+                  id="contactMessage"
+                  rows="3"
+                  placeholder="Write a short message"
+                ></textarea>
+              </div>
+
+              <button
+                type="button"
+                class="btn btn-warning text-dark font-weight-bold"
+                data-toggle="modal"
+                data-target="#contactModal"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div
+      class="modal fade"
+      id="contactModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="contactModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">Message Sent</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Thanks for checking out this page. This is a simple Bootstrap modal
+            connected to the footer form.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

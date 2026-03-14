@@ -19,7 +19,7 @@
     <!-- * student input CSS here -->
     <link rel="stylesheet" href="index.css" />
 
-    <title>Lab03 - Personall Website</title>
+    <title>Lab03 - Home Page</title>
   </head>
 
   <body>
@@ -28,7 +28,7 @@
     <!-- * student add component #1 NAVBAR -->
     <!-- They can either make by them self, or copy from the bootstrap documentation - navbar  -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-      <a class="navbar-brand font-weight-bold" href="#top"
+      <a class="navbar-brand font-weight-bold" href="index.html"
         >Lab 03 - Software Studio</a
       >
       <button
@@ -44,16 +44,19 @@
       </button>
 
       <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
+        <ul class="navbar-nav ml-auto align-items-lg-center">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#gallery">Gallery</a>
+            <a class="nav-link" href="about.html">About</a>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#video">Video</a></li>
           <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item mt-2 mt-lg-0">
             <a
               class="nav-link btn btn-sm btn-warning text-dark ml-lg-2 px-3"
               href="#contact"
@@ -68,17 +71,35 @@
     <!-- * Student can add button, card, carousel, media object, modal, dropdown, Hero, collapse, any bootstrap -->
     <!-- * Component #2 - Hero (jumbotron) -->
     <div class="jumbotron text-center">
-      <h1>My Name</h1>
-      <p>About Me</p>
-      <a href="about.html" class="btn btn-primary">Go to About Page</a>
+      <h1>Doe Xi Jimmy</h1>
+      <p>
+        Hi, my name is <b>Doe Xi</b>! You can call me Jimmy. This is my personal
+        website. <br />
+        I used several Bootstrap components, completed all the TODOs, and made
+        it responsive. <br />
+        <br />
+        I chose the theme : <b>Personal Website</b>
+      </p>
+      <a href="about.html" class="btn btn-primary">About Page</a>
     </div>
 
     <section id="about" class="section-pad">
       <div class="container">
         <h2 class="section-title">About Me</h2>
-        <p class="text-muted mb-0">
-          TODO: Write a short introduction about yourself (2–4 lines). Include
-          your interests, goals, or what you’re currently learning.
+        <p class="">
+          I am a 21-year-old software engineering student at Tsing Hua
+          University. I am passionate about technology, coding, and building
+          creative projects. I am currently surviving deadlines, debugging at
+          midnight, and proving that school is definitely not for the weak. I am
+          always eager to learn new things and keep improving my skills through
+          every challenge.
+        </p>
+        <p>
+          Right now, I am working on projects in software engineering and
+          robotics, where I get to turn ideas into real systems through code. I
+          enjoy building things that feel both smart and creative, especially
+          when they solve actual problems. It is not always easy, but we stay
+          locked in, trust the process, and try not to get cooked by deadlines.
         </p>
       </div>
     </section>
@@ -88,39 +109,28 @@
       <div class="container">
         <h2 class="section-title">Photo Gallery</h2>
         <p class="text-muted">
-          Responsive grid: 4 columns (lg), 2 columns (md), 1 column (sm).
+          Responsive grid: 4 columns (lg), 2 columns (md), 1 column (sm). <br />
+          <b>Note: Please follow the Lab Slides instruction</b>
         </p>
 
         <div class="row" id="photo-gallery">
           <!-- Column 1 -->
           <div class="col-lg-3 col-md-6 col-sm-12 mb-3 photo-column">
             <div class="photo-sm">
-              <img
-                src="https://picsum.photos/seed/p1/800/600"
-                alt="Gallery photo 1"
-              />
+              <img src="image/photo_4.gif" alt="Gallery photo 1" />
             </div>
             <div class="photo-big">
-              <img
-                src="https://picsum.photos/seed/p2/800/900"
-                alt="Gallery photo 2"
-              />
+              <img src="image/photo_1.jpg" alt="Gallery photo 2" />
             </div>
           </div>
 
           <!-- Column 2 -->
           <div class="col-lg-3 col-md-6 col-sm-12 mb-3 photo-column">
             <div class="photo-big">
-              <img
-                src="https://picsum.photos/seed/p3/800/900"
-                alt="Gallery photo 3"
-              />
+              <img src="image/photo_2.jpg" alt="Gallery photo 3" />
             </div>
             <div class="photo-sm">
-              <img
-                src="https://picsum.photos/seed/p4/800/600"
-                alt="Gallery photo 4"
-              />
+              <img src="image/photo_3.jpg" alt="Gallery photo 4" />
             </div>
           </div>
 
@@ -186,6 +196,99 @@
         </div>
       </div>
     </section>
+
+    <footer id="contact" class="site-footer py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-7">
+            <h2 class="section-title text-white mt-0">Contact Me</h2>
+            <p class="text-light mb-4">
+              A simple Bootstrap form inside the footer. Click the button to
+              open a modal message.
+            </p>
+
+            <form>
+              <div class="form-group">
+                <label for="contactName" class="text-white">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="contactName"
+                  placeholder="Your name"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail" class="text-white">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="contactEmail"
+                  placeholder="name@example.com"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage" class="text-white">Message</label>
+                <textarea
+                  class="form-control"
+                  id="contactMessage"
+                  rows="3"
+                  placeholder="Write a short message"
+                ></textarea>
+              </div>
+
+              <button
+                type="button"
+                class="btn btn-warning text-dark font-weight-bold"
+                data-toggle="modal"
+                data-target="#contactModal"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div
+      class="modal fade"
+      id="contactModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="contactModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">Message Sent</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Thanks for checking out this page. This is a simple Bootstrap modal
+            connected to the footer form.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
